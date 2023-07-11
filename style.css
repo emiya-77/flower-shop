@@ -27,6 +27,20 @@
 .primary-color {
 	color: #e55473;
 }
+.sub-title {
+	color: #272727;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 900;
+	margin-bottom: 24px;
+}
+.sub-description {
+	color: rgba(39, 39, 39, 0.6);
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+}
 
 /* HEADER SECTION STYLES */
 .header {
@@ -40,13 +54,13 @@
 .header-content {
 	width: 50%;
 }
-.header-content .header-title {
+.header-title {
 	color: #272727;
 	font-size: 80px;
 	font-weight: 800;
 	margin-bottom: 32px;
 }
-.header-content .header-description {
+.header-description {
 	color: rgba(39, 39, 39, 0.6);
 	font-size: 18px;
 	font-weight: 400;
@@ -68,21 +82,6 @@
 	width: 42%;
 	margin: 0 auto 48px;
 }
-.featured-header h2 {
-	color: #272727;
-	text-align: center;
-	font-size: 40px;
-	font-weight: 900;
-	margin-bottom: 24px;
-}
-.featured-header p {
-	color: rgba(39, 39, 39, 0.6);
-	text-align: center;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 30px;
-}
-
 .featured-flowers-container {
 	display: flex;
 	justify-content: space-between;
@@ -105,11 +104,11 @@
 	align-items: flex-end;
 	justify-content: center;
 }
-.featured-flower-2 {
+.featured-flower-item:nth-child(2) .featured-flower {
 	align-items: center;
 	background: rgba(5, 151, 160, 0.15);
 }
-.featured-flower-3 {
+.featured-flower-item:nth-child(3) .featured-flower {
 	background: rgba(71, 125, 17, 0.15);
 }
 .featured-flower-item h3 {
@@ -121,7 +120,6 @@
 	text-decoration-line: underline;
 	margin-top: 32px;
 }
-
 .featured-service-container {
 	width: 100%;
 	border-radius: 8px;
@@ -138,6 +136,7 @@
 .featured-service-item img {
 	height: 88px;
 	width: 88px;
+	margin-bottom: 24px;
 }
 .featured-service-item p {
 	color: rgba(39, 39, 39, 0.8);
@@ -160,18 +159,13 @@
 	text-align: center;
 	width: 55%;
 }
-.deals-content h2 {
-	color: #272727;
-	font-size: 40px;
-	font-weight: 900;
-	margin-bottom: 24px;
-}
 .deals-content p {
-	color: rgba(39, 39, 39, 0.6);
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 30px;
 	margin-bottom: 32px;
+}
+.deals-img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* MAIN: SOCIALS SECTION STYLES */
@@ -182,21 +176,6 @@
 	width: 42%;
 	margin: 0 auto 48px;
 }
-.socials-header h2 {
-	color: #272727;
-	text-align: center;
-	font-size: 40px;
-	font-weight: 900;
-	margin-bottom: 24px;
-}
-.socials-header p {
-	color: rgba(39, 39, 39, 0.6);
-	text-align: center;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 30px;
-}
-
 .socials-items-container {
 	display: flex;
 	justify-content: space-between;
@@ -208,11 +187,7 @@
 .blogs {
 	margin-bottom: 128px;
 }
-.blog-title {
-	color: #272727;
-	text-align: center;
-	font-size: 40px;
-	font-weight: 900;
+.blogs > h2 {
 	margin: 150px 0 80px;
 }
 .blogs-container {
@@ -220,6 +195,7 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
+	flex-wrap: wrap;
 }
 .blogs-container > a {
 	text-decoration: none;
@@ -230,15 +206,14 @@
 	justify-content: center;
 	align-items: center;
 	width: 400px;
-	padding: 20px;
+	padding: 25px 20px;
 	border-radius: 20px;
-	/* border: 2px solid rgba(218, 132, 132, 0.2); */
 	transition: all 0.5s ease;
 }
 .blog-item:hover {
 	box-shadow: 0px 0px 20px 3px rgba(229, 84, 115, 0.4);
 }
-.blog-img {
+.blog-img-container {
 	width: 350px;
 	height: 350px;
 	border-radius: 50%;
@@ -249,7 +224,7 @@
 	margin-bottom: 40px;
 	box-shadow: 0px 0px 20px 3px rgba(243, 133, 157, 0.1);
 }
-.blog-img > img {
+.blog-img-container > img {
 	width: 200%;
 }
 .blog-item > h3 {
@@ -294,18 +269,9 @@
 	background-repeat: no-repeat;
 }
 .latest-deals-header h2 {
-	color: #272727;
-	text-align: center;
-	font-size: 40px;
-	font-weight: 900;
 	margin-bottom: 16px;
 }
 .latest-deals-header p {
-	color: rgba(39, 39, 39, 0.6);
-	text-align: center;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 30px;
 	margin-bottom: 48px;
 }
 
