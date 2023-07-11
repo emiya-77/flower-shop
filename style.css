@@ -8,7 +8,7 @@
 
 /* COMMON SHARED STYLES */
 .side-pad-240 {
-	padding: 0 240px;
+	padding: 0 230px;
 }
 .btn {
 	padding: 20px 43px;
@@ -169,6 +169,9 @@
 }
 
 /* MAIN: SOCIALS SECTION STYLES */
+.socials {
+	margin-bottom: 128px;
+}
 .socials-header {
 	width: 42%;
 	margin: 0 auto 48px;
@@ -186,4 +189,10 @@
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 30px;
+}
+
+.socials-items-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
